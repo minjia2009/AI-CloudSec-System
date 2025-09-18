@@ -40,6 +40,20 @@ The project combines **theory** (cybersecurity frameworks) and **practice** (clo
 ---
 
 ## Getting Started  
+Student Read Me
+# CloudSec-AI-Lab (Group 2 Contribution)
+
+## 1. Install Prerequisites
+1. Download and install [Git](https://git-scm.com/downloads/win)  
+2. Download and install [Git LFS](https://git-lfs.com/)  
+3. Download and install [Python](https://www.python.org/downloads/)  
+4. Download and install [Visual Studio Code](https://code.visualstudio.com/docs/?dv=win64user)  
+
+After installation, restart your PC and check versions in CMD:
+```bash
+git --version
+git lfs version
+python --version
 
 ### 1. Ensure git lfs is installed 
 ```bash
@@ -65,7 +79,31 @@ cd CloudSec-AI-Lab
 
 ### 4. Cloud Setup
 - AWS Free Tier account (for CloudTrail, GuardDuty, EC2 honeypots).  
-- Snowflake free trial account (for analytics + queries).  
+- Snowflake free trial account (for analytics + queries).
+
+### 5. Verify Project Files
+ls
+docs/  honeypot/  ids_ips/  models/  monitoring/  snowflake/  data/
+
+### 6. Dataset Setup 
+cp /c/Users/hi/Downloads/statement.csv ./data/
+
+### 7. Run a Text Script
+import pandas as pd
+
+df = pd.read_csv("data/statement.csv")
+print("✅ Dataset loaded successfully!")
+print("Shape:", df.shape)
+print(df.head())
+
+
+------- python text_dataset.py---------------------
+
+### 8. Group 2 Contribution
+Documented the step-by-step installation and setup process
+Recorded issues encountered (HTTPS, SSH, authentication) and solutions
+Successfully cloned and set up the repository with Git LFS
+Created a Python test script to validate dataset loading
 
 ---
 
