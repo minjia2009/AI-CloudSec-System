@@ -1,2 +1,0 @@
-git add .pre-commit-config.yaml
-git commit -m "chore(pre-commit): add pre-commit hook config"
